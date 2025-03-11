@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Box-min{
+            width: min(80%,500px);
+            height: 200px;
+            background-color: #54E885;
+            text-align: center;
+            line-height: 200px;
+            font-size: 20px;
+            margin: 20px auto;
+        }
+        .box-max {
+            width: max(300px, 50%); /* The larger value between 300px and 50% of the viewport */
+            height: 200px;
+            background-color: #54E885;
+            text-align: center;
+            line-height: 200px;
+            font-size: 20px;
+            margin: 20px auto;
+        }
+        .container1{
+            background-color: darkorange;
+            padding: 20px;
+            width: 300px;
+            height: 200px;
+        }
+        .container2{
+            width: auto;
+            height: 200px;
+            padding: 20px;
+            background-color: brown;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="Box-min">Min Box</div>
+    <div class="Box-min">Max Box</div>
+    <br><br><br>
+
+    <div class="container1">
+        <p>In CSS, the autofill feature is commonly associated with form inputs, where 
+            browsers automatically populate fields based on previously entered data. 
+            You can style autofilled inputs using the :autofill pseudo-class.</p>
+    </div>
+    <br><br><br><br><br>
+    <div class="container2">
+        <p>auto-fit is a keyword used in CSS Grid Layout when 
+            defining the number of columns in a grid using repeat().
+             It automatically adjusts the number of columns based on the available space.</p>
+    </div>
+</body>
+</html>

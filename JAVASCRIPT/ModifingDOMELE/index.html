@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myid">
+        this element has <span>spacing</span>
+        <p style="display: none"> Hidden text</p>
+    </div>
+    <script>
+        let myElement = document.getElementById("myid");
+        //let content = myElement.innerHTML;
+        //let content = myElement.innerText;
+        let content = myElement.innerHTML;
+        console.log(content)
+        myElement.innerHTML = "<p>hi</p>"
+        //alert(content)
+    </script>
+</body>
+</html>

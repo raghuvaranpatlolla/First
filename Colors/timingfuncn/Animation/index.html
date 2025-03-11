@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic CSS Animation</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+
+      background-color: #4726d8;
+      position: relative;
+      animation-name: move-box;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+
+    /* @keyframes move-box { 
+       0% { left: 0; } 
+       50%{left: 200px;}
+     100% { left: 0; } 
+    
+     } */
+
+     @keyframes move-box { 
+        0% { left: 0; transform: rotate(0deg) } 
+       50%{left: 200px; background-color: rgb(230, 210, 34);border-radius: 40px;transform: scale(0.5) rotate(180deg)}
+     100% { left: 400px; transform: scale(1.5) rotate(360deg)} 
+     }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
